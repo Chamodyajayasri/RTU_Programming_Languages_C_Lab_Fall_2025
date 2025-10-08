@@ -1,6 +1,6 @@
 /*
  * Lab 3, Task 3
- * Student Name, Student ID
+ * Student Name-Kakulandala Liyanage Don Chamodya Jayasri, Student ID-243AEB012
  *
  * Implement basic string handling functions.
  * Write your own versions of:
@@ -26,25 +26,41 @@ int my_strlen(const char *str);
 void my_strcpy(char *dest, const char *src);
 
 int main(void) {
-    // TODO: Test your functions here
-    char test[] = "Programming in C";
-    char copy[100];
-
-    int len = my_strlen(test);
+    // Test the functions
+    char text[] = "hello";
+    int len = my_strlen(text);
     printf("Length: %d\n", len);
 
-    my_strcpy(copy, test);
-    printf("Copy: %s\n", copy);
+    char buffer[100];
+    my_strcpy(buffer, text);
+    printf("Copy: %s\n", buffer);
+
+    // Test with another string
+    char test2[] = "Programming";
+    printf("Length of '%s': %d\n", test2, my_strlen(test2));
+
+    char buffer2[100];
+    my_strcpy(buffer2, test2);
+    printf("Copied: %s\n", buffer2);
 
     return 0;
 }
 
-// Implement functions below
+// Count characters until null terminator
 int my_strlen(const char *str) {
-    // TODO: count characters until '\0'
-    return 0; // placeholder
+    int count = 0;
+    while (str[count] != '\0') {
+        count++;
+    }
+    return count;
 }
 
+// Copy string from src to dest
 void my_strcpy(char *dest, const char *src) {
-    // TODO: copy characters until '\0'
+    int i = 0;
+    while (src[i] != '\0') {
+        dest[i] = src[i];
+        i++;
+    }
+    dest[i] = '\0'; // Add null terminator at the end
 }
