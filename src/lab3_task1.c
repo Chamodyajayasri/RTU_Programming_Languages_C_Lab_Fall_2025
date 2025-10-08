@@ -1,7 +1,7 @@
 
 /*
  * Lab 3, Task 1
- * Student Name, Student ID
+ * Student Name-Kakulandala Liyanage Don Chamodya Jayasri, Student ID-243AEB012
  *
  * Implement array algorithms:
  *   - find minimum value
