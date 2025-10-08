@@ -9,7 +9,7 @@
       - Ask user for an integer n (>= 2)
       - If invalid, print an error
       - Otherwise, print all prime numbers up to n
-*/
+*/ 
 
 int is_prime(int n) {
  if (n < 2) return 0;
